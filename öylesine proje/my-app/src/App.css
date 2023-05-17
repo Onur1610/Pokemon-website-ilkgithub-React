@@ -124,8 +124,8 @@ p {
 }
 .mode-control span{
   position: absolute;
-  margin-top: 5px;
-  margin-left: 40%;
+  top: 5px;
+  right: 0%;
   padding: 5px 20px;
   line-height: 30px;
   border-radius: 30px;
