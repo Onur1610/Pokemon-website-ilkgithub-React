@@ -1,0 +1,134 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+img {
+  width: 200px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fdfdfd;
+}
+.s{
+  margin-left: 200px;
+  z-index: 999;
+ width: 25px;
+ border-radius: 25px;
+  background-color: #00aeff;
+  color: aliceblue;
+  text-decoration: none;
+}
+h1 {
+  margin: 15px;
+  font-family: 'Antic Slab', serif;
+  letter-spacing: 1.3px;
+}
+
+input {
+  width: 600px;
+  padding: 14px 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: .3px solid black;
+  background-color: #585858;
+  color: white;
+  border: none;
+}
+input::placeholder{
+  color: white;
+}
+input:focus{
+  outline: none;
+}
+
+h3 {
+  margin-top: 10px;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+p {
+  margin: 10px 0;
+  font-family: 'Antic Slab', serif;
+  margin-bottom: 25px;
+}
+
+.dataContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.data {
+  width: 230px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+  background-color: #e9e9e9;
+  padding-top: 20px;
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: .3s;
+}
+.data:hover{
+
+  transform: scale(1.1);
+  
+}
+.mode-control input{
+  position: absolute;
+  opacity: 0;
+}
+.mode-control span:nth-of-type(2){
+  display: none;
+}
+.mode-control input:checked + span{
+  display: none;
+}
+.mode-control input:checked + span + span{
+  display: inline-block;
+}.dark {
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.dark .search {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.dark .data {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+.mode-control span{
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 40%;
+  padding: 5px 20px;
+  line-height: 30px;
+  border-radius: 30px;
+  background-color: #46454573;
+  color: #fff;
+}
