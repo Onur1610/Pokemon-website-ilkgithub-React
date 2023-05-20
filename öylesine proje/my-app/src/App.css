@@ -94,7 +94,7 @@ p {
 .data:hover{
 
   transform: scale(1.1);
-  
+  opacity: 1;
 }
 .mode-control input{
   position: absolute;
@@ -131,4 +131,58 @@ p {
   border-radius: 30px;
   background-color: #46454573;
   color: #fff;
+}.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 50%;
+}
+
+.pagination-button:hover {
+  background-color: #f2f2f2;
+  color: #555;
+}
+
+.pagination-button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.pagination-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.pagination-button.previous,
+.pagination-button.next {
+  padding: 8px;
+}
+
+.pagination-button.ellipsis {
+  pointer-events: none;
+}
+
+.dark .pagination-button {
+  color: #fff;
+}
+
+.dark .pagination-button:hover {
+  background-color: #555;
+  color: #eee;
+}
+
+.dark .pagination-button.active {
+  background-color: #eee;
+  color: #333;
 }
