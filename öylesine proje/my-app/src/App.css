@@ -186,3 +186,45 @@ p {
   background-color: #eee;
   color: #333;
 }
+.favorite-button {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.favorite-button:hover {
+  color: #ff0000;
+}
+
+.favorite-button:focus {
+  outline: none;
+}
+
+.favorite-button-icon {
+  margin-right: 0.5rem;
+}
+
+.page-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.loader-image {
+  animation: spin 1s linear infinite;
+  width: 200px;
+  height: 200px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
